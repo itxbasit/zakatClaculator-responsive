@@ -1,0 +1,188 @@
+@font-face {
+    font-family: urdu;
+    src: url(Arabic\ Greetings.otf);
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col1 {
+    background-color: rgba(6, 112, 29, 0.62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 97.6vh;
+}
+.row .col1 img{
+    margin-top: 12%;
+    width: 65%;
+}
+.ctn {
+    padding: 7px 15px;
+    font-size: 20px;
+    border: 0.125em solid #ffffff;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn:hover {
+    border: 0.125em solid #ffffff;
+    background-color: #000000;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+.row .col1 h1{
+    text-align: center;
+    font-family: urdu;
+    font-size: 6vmin;
+    color: #ffffff;
+}
+.row .col2 {
+    background-image: url(./imgaes/islamic-7093978_1920.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: 97.6vh;
+}
+#timer{
+    position: absolute;
+    margin-top: 9%;
+    font-size: 7vmin;
+    color: rgb(237, 204, 17);
+}
+.h{
+    margin-top: 5.9%;
+    color: whitesmoke;
+    font-size: 7vmin;
+}
+.h1{
+    margin-top: 5%;
+    color: whitesmoke;
+    font-size: 7vmin;
+}
+.row .col2 h4{
+    margin-top: 15%;
+    font-size: 3.8vmin;
+    color: #07ffcd;
+    text-align: center;
+}
+.row .col2 p{
+    color: rgb(251, 249, 249);
+    margin-top: -20px;
+    text-align: center;
+    font-size: 3.5vmin;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.change_content:after{
+    content: " ";
+    animation: changetext 10s infinite linear;
+    color: #00b894;;
+}
+.calc{
+    background-color: #00b894a1;
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+}
+.calc label{
+    font-size: 24px;
+    align-items: center;
+}
+.calc input {
+    padding: 5px;
+    font-size: 16px;
+}
+.calc select{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+.calc button{
+    margin-bottom: 10px;
+    font-size: 18px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    /* padding: 1px 30px 1px 30px; */
+    padding: 7px 15px;
+    border-radius: 30px;
+    border: 2px solid #000000;
+}
+
+.calc button:hover{
+    background-color: #00b894a1;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+@keyframes changetext{
+    0%{content: "صيام";}
+    20%{content: "رمضان";}
+    40%{content: "غفران";}
+    60%{content: "غفران";}
+    80%{content: "صیّام";}
+    100%{content: "رمضان";}
+}
+@media screen and (max-width: 1200px) {
+    body{
+        overflow: hidden;
+    }
+    .row .col1{
+        height: 97vh;
+    }
+    .row .col1 img{
+        margin-top: 100%;
+    }
+    #timer{
+        margin-top: 27%;
+        font-size: 16px;
+    }
+    .h{
+        margin-top: 30%;
+        font-size: 16px;
+    }
+    .h1{
+        margin-top: 10%;
+        font-size: 16px;
+    }
+    .row .col2 p{
+        margin-top: 9px;
+        font-size: 9px;
+    }
+    .row .col2 h4{
+        margin-top: 120px;
+        font-size: 12px;
+    }
+    .calc input {
+        padding: 0px;
+        font-size: 10px;
+    }
+    .calc select{
+        margin-top: 10px;
+        padding: 0px;
+        font-size: 9px;
+    }
+    .calc label{
+        font-size: 10px;
+    }
+    .calc button{
+        font-size: 10px;
+        padding: 3px 7px;
+    }
+    .ctn {
+        padding: 4px 8px;
+        font-size: 16px;
+    }
+}

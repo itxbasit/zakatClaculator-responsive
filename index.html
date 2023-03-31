@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col1">
+            <img src="./imgaes/ramadan-kareem-logo-design-template_567288-457-removebg-preview.png" alt="">
+            <h1>رمضان مبارک</h1>
+            <a href="./imgaes/2.jpg" target="_blank" class="ctn">Calendar</a>
+            <h1>ماہ <span class="change_content"></span></h1>
+        </div>
+        <div class="col2">
+            <h1 class="h">Zakat Calculator</h1>
+            <div class="calc">
+                <label for="calcOption">Choose an Option:</label>
+                <select id="option">
+                    <option value="">----------</option>               
+                    <option value="zakatOnRs">Zakat on Cash</option>
+                    <option value="zakatOnGold">Zakat on Gold</option>
+                    <option value="zakatOnSilver">Zakat on Silver</option>
+                    <option value="fitrahW">Fitrah on Wheat (Rs 300)</option>
+                    <option value="fitrahB">Fitrah on Barley (Rs 800)</option>
+                    <option value="fitrahD">Fitrah on Dates (Rs 2800)</option>
+                    <option value="fitrahR">Fitrah on Raisin (Rs 6400)</option>
+                </select>
+                <br><br>
+                <label for="value">Input the relevant value:</label>
+                <input id="num" type="number" min="1">
+                <br><br>
+                <label for="value">You will give charity:</label>
+                <input type="text" id="answer" readonly>
+                <br><br>
+                <button onclick="calc()">Click Here</button>
+            </div>
+            <h4>Mentioning the utmost importance of Zakat, Allah SWT says in The Holy Quran:</h4>
+            <p>“Those who perform As-Salat (Iqamat-as-Salat) and give zakat and they have faith in the Hereafter with certainty.”<br><br>(Surah Luqman, Chapter 31, verse 4)</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
